@@ -23,10 +23,6 @@ extension Memo {
 }
 
 extension Memo : Identifiable {
-//    public var intId: Int { Int(id) }
-//    public var wrappedTitle: String { title ?? "" }
-//    public var wrappedContent: String { content ?? "" }
-//    public var wrappedCreatedAt: Date { createdAt ?? Date() }
     public var stringUpdatedAt: String { dateFomatter(date: updatedAt ?? Date()) }
     
     func dateFomatter(date: Date) -> String {
