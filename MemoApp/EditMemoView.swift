@@ -7,7 +7,7 @@
 import SwiftUI
 
 struct EditMemoView: View {
-    @ObservedObject var memo: Memo
+    private var memo: Memo
     @Environment(\.managedObjectContext) private var viewContext
     @State private var title: String
     @State private var content: String
